@@ -5,9 +5,9 @@
   #:use-module (guix licenses)
   #:use-module (gnu packages gawk))
 
-(define-public hello
+(define-public jnu-hello
   (package
-    (name "hello")
+    (name "jnu-hello")
     (version "2.10")
     (source (origin
               (method url-fetch)
