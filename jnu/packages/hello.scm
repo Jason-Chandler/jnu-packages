@@ -36,9 +36,7 @@
              (base32
               "cd592f385c9bfb798f973225dfd086654973984762b669c7d765b074c0d8850f"))))
    (build-system linux-module-build-system)
-   (arguments
-    ;; TODO: No tests?
-    `(#:tests? #f))
+   ;;(arguments)
    (home-page "https://nvidia.com/")
    (synopsis "Kernel module that enables usage of Nvidia gpu")
    (description "Proprietary kernel module that allows proper function of Nvidia-brand graphics cards")
