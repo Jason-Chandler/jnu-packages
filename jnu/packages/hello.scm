@@ -23,3 +23,23 @@
     (description "Guess what GNU Hello prints!")
     (home-page "https://www.gnu.org/software/hello/")
     (license gpl3+)))
+
+(define-public nvidia-module
+  (package
+   (name "nvidia-module")
+   (version "440.31")
+   (source (origin
+            (method url-fetch)
+            (uri (string-append
+                  "https://download.nvidia.com/XFree86/Linux-x86_64/" version "/NVIDIA-Linux-x86_64-" version ".run"))
+            (sha256
+             (base32
+              "cd592f385c9bfb798f973225dfd086654973984762b669c7d765b074c0d8850f"))))
+   (build-system linux-module-build-system)
+   (arguments
+    ;; TODO: No tests?
+    ;;`(#:tests? #f))
+   (home-page "https://nvidia.com/")
+   (synopsis "Kernel module that enables usage of Nvidia gpu")
+   (description "Proprietary kernel module that allows proper function of Nvidia-brand graphics cards")
+   (license license:proprietary)))
