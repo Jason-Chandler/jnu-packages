@@ -42,4 +42,4 @@
    (home-page "https://nvidia.com/")
    (synopsis "Kernel module that enables usage of Nvidia gpu")
    (description "Proprietary kernel module that allows proper function of Nvidia-brand graphics cards")
-   (license license:proprietary))))
+   (license gpl3+))))
