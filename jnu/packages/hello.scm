@@ -38,8 +38,8 @@
    (build-system linux-module-build-system)
    (arguments
     ;; TODO: No tests?
-    ;;`(#:tests? #f))
+    `(#:tests? #f))
    (home-page "https://nvidia.com/")
    (synopsis "Kernel module that enables usage of Nvidia gpu")
    (description "Proprietary kernel module that allows proper function of Nvidia-brand graphics cards")
-   (license gpl3+))))
+   (license gpl3+)))
