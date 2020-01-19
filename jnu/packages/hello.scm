@@ -3,7 +3,8 @@
   #:use-module (guix download)
   #:use-module (guix build-system gnu)
   #:use-module (guix licenses)
-  #:use-module (gnu packages gawk))
+  #:use-module (gnu packages gawk)
+  #:use-module (guix build-system linux-module))
 
 (define-public jnu-hello
   (package
